@@ -3,6 +3,7 @@
     body {
       background-image: url("./yakok.jpeg");
       background-size: cover;
+      background-position: center;
     }
     canvas {
       width: 100%;
@@ -10,9 +11,22 @@
       position: fixed;
       z-index: 100;
     }
+    h1 {
+      color: white;
+      font-weight: bold;
+      font-size: 10em;
+      text-shadow: 0px 0px 20px #000;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: auto;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
+  <h1>איך אתה ישר?</h1>
   <canvas id="my-canvas"></canvas>
   <script src="confetti.js"></script>
   <script>
