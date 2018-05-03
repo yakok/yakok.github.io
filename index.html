@@ -1,2 +1,24 @@
-Ehhhhhhhhhhhhhhhhh
-<img src="./yakok.jpeg" />
+<head>
+  <style>
+    body {
+      background-image: url("./yakok.jpeg");
+      background-size: cover;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="my-canvas"></canvas>
+  <script src="confetti.js"></script>
+  <script>
+    var confetti = new window.ConfettiGenerator({
+      "target": "my-canvas", "max": "1000", "size": "1", "animate": true, "props": ["circle", "square", "triangle", "line"], "colors": [[165, 104, 246], [230, 61, 135], [0, 199, 228], [253, 214, 126]], "clock": "25", "width": "1680", "height": "886"
+    });
+    confetti.render();
+  </script>
+</body>
